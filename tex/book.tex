@@ -17,6 +17,19 @@
 \begin{document}
 \maketitle \tableofcontents \clearpage
 
-..
+% Title page and copyright
+\include{front}
+
+
+% Bibliography
+\bibliographystyle{halpha}
+\phantomsection % black magic to get TOC to point to correct page
+\addcontentsline{toc}{part}{\bibname}
+\markboth{}{\textsc{Bibliography}}
+{\renewcommand{\markboth}[2]{} % Prevent bibliography from resetting the header to something silly
+\bibliography{references}}
+
+% The back cover
+\include{back}
 
 \end{document}

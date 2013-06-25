@@ -83,6 +83,9 @@
 {\renewcommand{\markboth}[2]{} % Prevent bibliography from resetting the header to something silly
 \bibliography{references}}
 
+%%%% Index of symbols
+
+\include{symbols}
 %%%%% Index of terms %%%%%
 
 %% Global cross-references for index
@@ -93,6 +96,8 @@
 \phantomsection % black magic to get TOC to point to correct page
 \addcontentsline{toc}{part}{Index}
 \markboth{}{\textsc{Index}}
+\renewcommand{\markboth}[2]{}
+{\footnotesize\setlength{\columnsep}{15.0pt}\printindex}
 
 % The back cover
 \include{back}

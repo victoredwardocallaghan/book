@@ -16,7 +16,9 @@
 
 % Fonts
 \usepackage{mathpazo}
-\usepackage{palatino}
+\usepackage[scaled=0.95]{helvet}
+\usepackage{courier}
+\linespread{1.05}
 
 \usepackage[numbered]{bookmark}
 \usepackage{fullpage}
@@ -27,18 +29,31 @@
 \usepackage{setspace, graphicx, enumerate, cancel}
 \usepackage{pbox}
 \usepackage{fancyvrb}
+% To set headers and footers
 \usepackage{fancyhdr}
+% So we can jump to odd-numbered pages
+\usepackage{nextpage}
 \usepackage{mdframed}
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \usepackage{wallpaper}
 
+\usepackage{amssymb,amsmath,amsthm,stmaryrd,mathrsfs,wasysym}
+\usepackage{enumitem,mathtools,xspace}
+
 \usepackage{listings}
 \usepackage{sidecap}
+\usepackage{comment}
+\usepackage[capitalize]{cleveref}
+
+% Multi-Columns for long lists of names
+\usepackage{multicol}
 
 \usepackage{braket}
 
 \usepackage{tikz}
 \usetikzlibrary{decorations.pathmorphing,arrows}
+
+\input{macros}
 
 % Make Index
 \usepackage{makeidx}

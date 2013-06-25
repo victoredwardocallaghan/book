@@ -1,0 +1,17 @@
+%
+% Copyright © 2013 Edward O'Callaghan. All Rights Reserved.
+%
+
+
+%%% Arrows
+\newcommand{\epi}{\ensuremath{\twoheadrightarrow}}
+\newcommand{\mono}{\ensuremath{\rightarrowtail}}
+
+%%%% INDEX %%%%
+
+\newcommand{\footstyle}[1]{{\hyperpage{#1}}n} % If you index something that is in a footnote
+\newcommand{\defstyle}[1]{\textbf{\hyperpage{#1}}} % Style for pageref to a definition
+
+\newcommand{\indexdef}[1]{\index{#1|defstyle}} % Index a definition
+\newcommand{\indexfoot}[1]{\index{#1|footstyle}} % Index a term in a footnote
+\newcommand{\indexsee}[2]{\index{#1|see{#2}}} % Index "see also"

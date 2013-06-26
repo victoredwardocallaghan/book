@@ -1,0 +1,34 @@
+%
+% Copyright © 2013 Edward O'Callaghan. All Rights Reserved.
+%
+
+\section{Groupoids}
+\label{sec:groupoids}
+
+The extension from \emph{group} to \emph{groupoid} is motivated with the
+desire to describe reversible mappings which may traverse a number of states.
+Intuitively, in \emph{group theory} we study mappings of the form
+$\tau : \mathcal{G} \times \mathcal{G} \to \mathcal{G}$
+that are total functions. Whereas in \emph{groupoid theory} one considers a set
+of compositable and invertible mappings of the form
+$\phi \circ \psi : \mathcal{G} \times \mathcal{G} \to \mathcal{G}$
+where $\phi$ and $\psi$ need only be partial functions on $\mathcal{G}$.
+
+\begin{defn}[Groupoid]
+ \label{defn:groupoid}
+
+ A \define{groupoid} is a small category in which every morphism is an isomorphism.
+
+ \indexdef{groupoid}
+ \indexsee{groupoid}{groupoid}
+\end{defn}
+
+%\begin{exmp}
+Thus, as a result one may view groups as a groupoid with one object.
+More precisely, a groupoid $X$ with one object $x$ is uniquely determined
+by its automorphism group $\mathcal{G}=\text{Aut}(x)$. Consequently, any group
+may be regarded as a groupoid with one object.
+
+Notice that can naturally view morphisms between \emph{groupoids} are
+\emph{functors} between categories.
+

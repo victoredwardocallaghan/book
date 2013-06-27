@@ -1,6 +1,8 @@
 
 ## Sections - TODO
 
+> Foundations in Mathematics and Computation:
+
 Prelude:
  * Predicate logic
  * Modal logic
@@ -28,6 +30,8 @@ Data Structures:
 Algorithms II:
  * Functions on data structures..
 
+> Higher Mathematics:
+
 Topology:
  * Metric spaces
  * Topology
@@ -40,6 +44,8 @@ Category Theory:
  * Groups
  * Groupoids
  * Vector spaces
+
+> Higher Computational Theory:
 
 Theory of Computation:
   * Turing Machine

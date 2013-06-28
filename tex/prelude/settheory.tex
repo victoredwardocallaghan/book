@@ -40,3 +40,51 @@ of which is the ZFN system.
  set, denoted $x \in X$. The logical negation $\neg (x \in X)$ is written
  $x \not \in X$ and read as $x$ is \emph{not} an element of the set $X$.
 \end{defn}
+
+..
+
+\begin{defn}
+ Equality of two sets $X$ and $Y$ is defined by; $X=Y$ if and only if
+ $X \subseteq Y$ and $Y \subseteq X$.
+\end{defn}
+
+Set \emph{intersections} can be understood as a generalisation of predicate
+logic "and" conjunction written $\wedge$ between elements to intersections
+between sets of elements written $\cap$. More formally;
+
+\begin{defn}
+ The \emph{intersections} of two sets $X$ and $Y$ is defined as the set,
+ $X \cap Y = \{ x \in X \wedge y \in Y \}$.
+\end{defn}
+
+\begin{lem}
+ Set intersection \emph{idempotent} property $X \cap X = X$.
+\end{lem}
+
+Set \emph{unions} can then be understood as the logical negation of
+intersections. Hence the logical "or" disjunction written $\vee$ between
+elements to unions between sets of elements written $\cup$. More formally;
+
+\begin{defn}
+ The \emph{unions} of two sets $X$ and $Y$ is defined as the set,
+ $X \cup Y = \{ x \in X \vee y \in Y \}$.
+\end{defn}
+
+\begin{lem}
+ Set union \emph{idempotent} property $X \cup X = X$.
+\end{lem}
+
+In symbols, recall that $x \wedge y$ for booleans variables $x,y$ then leads us
+to $X \cap Y$ for sets $X,Y$. So, since $\neg (x \wedge y)= \neg x \vee \neg y$
+we have that $\neg (x \in X \cap y \in Y) = \neg (x \in X) \cup \neg (y \in Y)$.
+We then adopt a more general notation for set logical negations called the
+\emph{complement} written $X^c$ defined in the following way;
+If $\neg (x \in X)$ then $x \not \in X$ and so for every $x \not \in X$ we form
+the complement set written $X^c$ for which $x \in X^c$ whenever $x \not \in X$.
+
+Hence we arrive at DeMorgan's laws:
+\begin{itemize}
+ \item $(X \cap Y)^c = X^c \cup Y^c$ and
+ \item $(X \cup Y)^c = X^c \cap Y^c$.
+\end{itemize}
+
